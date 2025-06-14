@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nizar-Tech | Tecnología Accesible</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --color-primary: #0f172a;
+      --color-secondary: #1e3a8a;
+      --color-accent: #3b82f6;
+      --color-bg: #f3f4f6;
+      --color-white: #ffffff;
+      --color-dark: #111827;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-dark);
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+      color: var(--color-white);
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: var(--color-secondary);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: var(--color-white);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--color-accent);
+    }
+    .container {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .product {
+      background: var(--color-white);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    .product p {
+      font-size: 0.95rem;
+      margin: 0.5rem 0;
+    }
+    .product strong {
+      color: var(--color-accent);
+      font-size: 1.1rem;
+    }
+    footer {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--color-accent);
+      padding-left: 0.5rem;
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nizar-Tech</h1>
+    <p>Tecnología buena, bonita y barata</p>
+  </header>
+
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#sobre">Sobre Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="container">
+    <section id="productos">
+      <h2>Productos Destacados</h2>
+      <div class="product-grid">
+
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200" alt="Auriculares TWS" />
+          <h3>Auriculares TWS Bluetooth 5.3</h3>
+          <p>Sonido envolvente, diseño ergonómico y batería duradera. Perfectos para tu día a día.</p>
+          <strong>€11,99</strong>
+        </div>
+
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200" alt="Cargador Rápido 20W" />
+          <h3>Cargador Rápido USB-C 20W</h3>
+          <p>Carga tu móvil hasta 3 veces más rápido. Compacto, potente y seguro.</p>
+          <strong>€8,99</strong>
+        </div>
+
+        <div class="product">
+          <img src="https://via.placeholder.com/300x200" alt="Tira LED RGB" />
+          <h3>Tira LED RGB con USB</h3>
+          <p>Ilumina tu espacio con estilo y colores ajustables. Fácil de instalar en cualquier lugar.</p>
+          <strong>€10,99</strong>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="sobre" style="margin-top: 3rem;">
+      <h2>Sobre Nosotros</h2>
+      <p>En <strong>Nizar-Tech</strong> seleccionamos cuidadosamente los mejores gadgets de tecnología accesible. Queremos que disfrutes de productos útiles, modernos y funcionales sin pagar precios excesivos. Nos enfocamos en calidad, utilidad y precio justo.</p>
+    </section>
+
+    <section id="contacto" style="margin-top: 3rem;">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas o necesitas asistencia personalizada? ¡Contáctanos!</p>
+      <p><strong>Email:</strong> contactonizartech@gmail.com</p>
+      <p><strong>Teléfono / WhatsApp:</strong> 624 86 53 64</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Nizar-Tech. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
+
